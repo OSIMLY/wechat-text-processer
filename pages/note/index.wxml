@@ -1,0 +1,84 @@
+<view class="mainBox">
+  <view class="searchBox">
+    <view class="search">
+      <input placeholder="..."  bindinput="search"  placeholder-class="searchHl" value="{{q_sousuo_neirong}}" />
+    </view>
+  </view>
+  <scroll-view class="noteListBox" scroll-y='true' scroll-top="{{scrollTop}}" style='height:{{scrollHeight}}px'>
+    <view class="col"  wx:if="{{diaryList.length<1 && diaryListSwitch}}">
+      <view class='item notepad'>
+        <view class='content'>
+          <view class='txt'  catchlongtap='listShortcutClick'>
+            <text>点击右侧的快捷按钮||| 可以删除 ^∇^\n</text>
+            <text class="note-date">欢迎使用微信小程序 ^_^</text>
+          </view>
+          <image class="listShortBtn" id="{{item.objectId}}" bindtap="listShortcutClick" src="http://mininote-1251903635.costj.myqcloud.com/q_diandian_new.png">
+          </image>
+        </view>        
+      </view>      
+    </view>
+
+     <view class="col" wx:if="{{diaryList.length<1 && diaryListSwitch}}">
+      <view class='item notepad '>
+        <view class='content'>
+          <view class='txt'  catchlongtap='listShortcutClick'>
+            <text>长按可复制或删除 😄\n</text>
+            <text class="note-date">欢迎使用微信小程序 ^_^</text>
+          </view>
+          <image class="listShortBtn" id="{{item.objectId}}" bindtap="listShortcutClick" src="http://mininote-1251903635.costj.myqcloud.com/q_diandian_new.png">
+          </image>
+        </view>        
+      </view>      
+    </view>
+    
+    <view class="col" wx:key="cid" wx:if="{{diaryList.length<1 && diaryListSwitch}}">
+      <view class='item notepad '>
+        <view class='content'>
+          <view class='txt'  catchlongtap='listShortcutClick'>
+            <text>右下方的快捷按钮可以新建或同步 😙\n</text>
+            <text class="note-date">欢迎使用微信小程序 ^_^</text>
+          </view>
+          <image class="listShortBtn" id="{{item.objectId}}" bindtap="listShortcutClick" src="http://mininote-1251903635.costj.myqcloud.com/q_diandian_new.png">
+          </image>
+        </view>        
+      </view>      
+    </view>
+
+    <view class="col" wx:key="cid" wx:if="{{diaryList.length<1 && diaryListSwitch}}">
+      <view class='item notepad '>
+        <view class='content' >
+          <view class='txt' catchlongtap='listShortcutClick'>
+            <text>有任何问题欢迎反馈 👀\n</text>
+            <text class="note-date">在'我的'→'反馈'中可发送反馈意见 ^_^</text>
+          </view>
+          <image class="listShortBtn" id="{{item.objectId}}" bindtap="listShortcutClick" src="http://mininote-1251903635.costj.myqcloud.com/q_diandian_new.png">
+          </image>
+        </view>        
+      </view>      
+    </view>
+    
+    <view class="col" wx:for="{{diaryList}}" wx:key="cid">
+      <view class='item notepad }'>
+        <view class='content' data-index="{{index}}" id="{{item.objectId}}" catchtap="clickNotelist" >
+          <view id="{{item.objectId}}" catchlongtap='noteListLongPress' >
+            <view class='txt'>
+              <text>{{item.note_title}}\n</text>
+              <text class="note-date" >{{item.note_date}}</text>
+            </view>
+          </view>
+          <image class="listShortBtn" id="{{item.objectId}}" catchtap="listShortBtnClick" src="http://mininote-1251903635.costj.myqcloud.com/q_diandian_new.png">
+          </image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="shortCutBtn">
+  <view class="sysBtn" >
+    <image src="{{sysBtnSrc}}" bindtap="sysBtnClick" bindtouchstart='sysBtnHover' bindtouchend='sysBtnHoverEnd'></image>
+  </view>
+  <view class="createBtn">
+    <image src="{{createBtnSrc}}" bindtap="createBtnClick"  bindtouchstart='createBtnHover' bindtouchend='createBtnHoverEnd'></image>
+  </view>
+</view>

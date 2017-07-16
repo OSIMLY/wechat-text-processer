@@ -1,0 +1,21 @@
+/**pages/help/index.wxss**/
+
+page {
+	background: #fff;
+}
+
+.container {
+	background: #fff;
+}
+
+.tr {
+	padding: 25rpx 50rpx 25rpx 50rpx;
+	font-size: 32rpx;
+}
+
+.tr view {
+	padding-left: 25px;
+	font-size: 30rpx;
+	line-height: 25px;
+	padding-top: 3px;
+}

@@ -1,0 +1,88 @@
+/**pages/sponsor/index.wxss**/
+
+page {
+	background: #fff;
+}
+
+.container {
+	background: #ffffff;
+	overflow-y: scroll;
+}
+
+.userinfo {
+	flex-direction: column;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.clear{
+	clear: both;
+}
+
+.box-wxpay input {
+	border: 1px solid #b69876;
+	border-radius: 3px;
+	float: left;
+	width: 220px;
+	height: 28px;
+}
+
+.box-wxpay button {
+	height: 30px;
+	font-size: 12px;
+	float: left;
+	margin-left: 8px;
+}
+
+.info {
+	font-size: 30rpx;
+}
+
+.box-wxpay {
+	width: 270px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+.payStyle {
+	text-align: center;
+	font-size: 12px;
+}
+
+.box-wxpay image {
+	width: 148px;
+	height: 191px;
+}
+
+.userinfo-avatar {
+	width: 130rpx;
+	height: 130rpx;
+	/*margin: 20rpx;*/
+	border-radius: 50%;
+	margin-left: 50rpx;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.m-g-t {
+	margin-top: 10px;
+}
+
+.pay-list {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tr {
+	padding: 15px;
+	font-size: 30rpx;
+}
+
+.tr view {
+	padding-left: 10px;
+}

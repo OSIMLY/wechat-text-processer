@@ -1,0 +1,46 @@
+
+.sendBtn {
+	width: 80%;
+	margin: 0 auto;
+	background: #b69876;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 32rpx;
+}
+
+.sendBtnHover {
+	width: 80%;
+	margin: 0 auto;
+	background: #886d53;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 32rpx;
+}
+
+.row {
+	background: #fff;
+	padding-top: 5%;
+}
+
+.row .text {
+	width: 92%;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+.ok_button {
+	display: flex;
+	background: #a48a6f;
+	width: 100%;
+	height: 30px;
+	justify-content: space-between;
+	padding-top: 6px;
+}

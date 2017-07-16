@@ -1,0 +1,238 @@
+/**note/index.wxss**/
+
+page {
+	background: #f8f8f8;
+}
+
+.container {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	background: #f8f8f8;
+	font-family: '微软雅黑';
+	margin-top: 50rpx;
+	z-index: 1;
+}
+.search icon{
+	float: left;
+}
+.noteListBox {
+	background: #f8f8f8;
+	font-family: '微软雅黑';
+	margin-top: 80rpx;
+	overflow-y: scroll;
+}
+
+.q_bottom_text_hide {
+	display: none;
+}
+
+.q_bottom_text {
+	display: inline;
+	color: silver;
+	font-size: 25rpx;
+	margin-left: 20rpx;
+	text-align: right;
+}
+
+.col {
+	margin: 2% 3%;
+	position: relative;
+}
+
+.col .item .bottom {
+	background: #bdb1a7;
+	font-size: 24rpx;
+}
+.col .item .content .txt {
+	font-size: 30rpx;
+	overflow: hidden;
+	text-align: left;
+}
+ 
+.item {
+	width: 100%;
+	padding-bottom: 12rpx;
+}
+ 
+
+.item .content {
+	background: #fff;
+}
+
+.item .bottom_hide {
+	display: none;
+}
+
+.item .bottom {
+	height: 70rpx;
+	background: #bdb1a7;
+	font-size: 24rpx;
+}
+
+.item .txt {
+	text-align: center;
+}
+
+
+.note-date {
+	font-size: 23rpx;
+	color: #d1d1d1;
+}
+
+.item .content .txt {
+	padding: 20rpx 0 0 20rpx;
+	font-size: 32rpx;
+	overflow: hidden;
+}
+
+.item .bottom .txt {
+	color: #fff;
+}
+
+.item.notepad {
+	background: #fff;
+}
+
+.item.today {
+	background: #fde3d5;
+}
+
+.item.yesterday {
+	background: #d5effd;
+}
+
+.add_box,
+.item.more {
+	border: 6rpx dotted #d9d9d9;
+}
+
+.add_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tips_box {
+	position: relative;
+}
+
+.tips_icon {
+	position: absolute;
+	top: -60rpx;
+}
+
+.tips {
+	position: absolute;
+	z-index: 9;
+	right: -300rpx;
+	bottom: -140rpx;
+}
+
+.tips_txt {
+	width: 360rpx;
+	font-size: 32rpx;
+	padding: 45rpx 0;
+	text-align: center;
+	background: #fff;
+	border-radius: 14rpx;
+}
+
+.tips_icon {
+	width: 70rpx;
+	height: 70rpx;
+	margin-left: 30rpx;
+	background-size: 100%;
+}
+
+
+/**/
+
+.bottom_bar {
+	position: absolute;
+	bottom: 12rpx;
+	z-index: 9999;
+	margin-left: 60%;
+}
+
+.bottom_bar_hide {
+	display: none;
+}
+
+.bottom_bar1 {
+	position: absolute;
+	top: -200rpx;
+	left: 185rpx;
+}
+
+.shortCutBtn {
+	position: fixed;
+	right: 2px;
+	bottom: 2%;
+}
+
+.sysBtn image {
+	width: 90rpx;
+	height: 90rpx;
+	line-height: 120rpx;
+}
+ 
+.createBtn image {
+	width: 90rpx;
+	height: 90rpx;
+	line-height: 120rpx;
+}
+
+.searchBox {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 5rpx;
+	display: inline;
+	position: absolute;
+	top: 1%;
+}
+  
+.search {
+	position: fixed;
+	top: 10rpx;
+	z-index: 100;
+	background-color: #f8f8f8;
+	width: 100%;
+	float: left;
+}
+
+.search input {
+	background: #fff;
+	height: 55rpx;
+	display: inline-block;
+	width: 92%;
+	margin-left: 25rpx;
+	font-size: 35rpx;
+	padding-top: 10rpx;
+	padding-bottom: 10rpx;
+	padding-left: 15rpx;
+}
+
+.searchHl {
+	padding-left: 25rpx;
+	font-size: 26rpx;
+}
+
+.listShortBtn {
+	width: 40rpx;
+	height: 25rpx;
+	padding: 20rpx 15rpx 10rpx 20rpx;
+	float: right;
+	margin-top: -70rpx;
+}
+
+.mainBox {
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+
+.hide {
+	display: none;
+}
